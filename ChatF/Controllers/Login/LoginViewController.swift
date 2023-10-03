@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     // MARK: - UI Elements
@@ -107,6 +108,15 @@ class LoginViewController: UIViewController {
             return
         }
         //MARK: - Firebase Login
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            guard let strongSelf = self else { return }
+            guard let result = authResult, error == nil else {
+                return
+            }
+            let user = result.user
+            print(user)
+            strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+        }
     }
     func alertUserLoginError() {
         let alert = UIAlertController(title: "Woops", message: "Please enter all information to log in.", preferredStyle: .alert)
