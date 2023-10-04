@@ -7,23 +7,25 @@
 
 import UIKit
 
-class MainTabbarViewController: UIViewController {
-
+class MainTabbarViewController: UITabBarController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .yellow
+        let vc1 = UINavigationController(rootViewController: ConversationsViewController())
+        let vc2 = UINavigationController(rootViewController: ProfileViewController())
 
-        // Do any additional setup after loading the view.
+
+        
+        vc1.tabBarItem.image = UIImage(systemName: "ellipsis.message")
+        vc2.tabBarItem.image = UIImage(systemName: "person.crop.circle.fill")
+        
+        vc1.title = "Chats"
+        vc2.title = "Profile"
+        
+        tabBar.tintColor = .label
+        setViewControllers([vc1, vc2], animated: true)
+
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

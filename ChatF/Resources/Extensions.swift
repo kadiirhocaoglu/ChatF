@@ -39,3 +39,5 @@ extension UITextField {
         self.rightViewMode = .always
     }
 }
+//MARK: - Typealias
+typealias configureTableView = UITableViewDelegate & UITableViewDataSource
