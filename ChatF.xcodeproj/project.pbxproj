@@ -14,6 +14,7 @@
 		93BBFBEF2ACDBF6D0000FFC6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 93BBFBEE2ACDBF6D0000FFC6 /* RealmSwift */; };
 		93BBFBF22ACDCC7C0000FFC6 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93BBFBF12ACDCC7C0000FFC6 /* MessageKit */; };
 		93BBFBF52ACDCD0A0000FFC6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 93BBFBF42ACDCD0A0000FFC6 /* SDWebImage */; };
+		93BFC6ED2ACEF129006C93BB /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 93BFC6EC2ACEF129006C93BB /* JGProgressHUD */; };
 		93CF42182ACB0C16003D7C7C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 93CF42172ACB0C16003D7C7C /* FirebaseAuth */; };
 		93CF421A2ACB0C16003D7C7C /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 93CF42192ACB0C16003D7C7C /* FirebaseAuthCombine-Community */; };
 		93CF421C2ACB0C16003D7C7C /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 93CF421B2ACB0C16003D7C7C /* FirebaseCrashlytics */; };
@@ -74,6 +75,7 @@
 				93CF421C2ACB0C16003D7C7C /* FirebaseCrashlytics in Frameworks */,
 				93CF42182ACB0C16003D7C7C /* FirebaseAuth in Frameworks */,
 				93BBFBF22ACDCC7C0000FFC6 /* MessageKit in Frameworks */,
+				93BFC6ED2ACEF129006C93BB /* JGProgressHUD in Frameworks */,
 				93CF422A2ACB0C16003D7C7C /* FirebaseFunctionsCombine-Community in Frameworks */,
 				93BBFBF52ACDCD0A0000FFC6 /* SDWebImage in Frameworks */,
 				93CF42282ACB0C16003D7C7C /* FirebaseFunctions in Frameworks */,
@@ -227,6 +229,7 @@
 				93BBFBEE2ACDBF6D0000FFC6 /* RealmSwift */,
 				93BBFBF12ACDCC7C0000FFC6 /* MessageKit */,
 				93BBFBF42ACDCD0A0000FFC6 /* SDWebImage */,
+				93BFC6EC2ACEF129006C93BB /* JGProgressHUD */,
 			);
 			productName = ChatF;
 			productReference = 93E3F3582AC97BEE0024C62E /* ChatF.app */;
@@ -261,6 +264,7 @@
 				93BBFBEB2ACDBF6D0000FFC6 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				93BBFBF02ACDCC7C0000FFC6 /* XCRemoteSwiftPackageReference "MessageKit" */,
 				93BBFBF32ACDCD0A0000FFC6 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				93BFC6EB2ACEF129006C93BB /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 			);
 			productRefGroup = 93E3F3592AC97BEE0024C62E /* Products */;
 			projectDirPath = "";
@@ -545,6 +549,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		93BFC6EB2ACEF129006C93BB /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
 		93CF42162ACB0C16003D7C7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -575,6 +587,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 93BBFBF32ACDCD0A0000FFC6 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		93BFC6EC2ACEF129006C93BB /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93BFC6EB2ACEF129006C93BB /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
 		};
 		93CF42172ACB0C16003D7C7C /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -8,14 +8,22 @@
 import UIKit
 import FirebaseAuth
 class ConversationsViewController: UIViewController {
-    
+    private let newConversationsBarButtonItem: UIBarButtonItem = {
+        let tabbarItem = UIBarButtonItem(barButtonSystemItem: .compose, target: nil, action: #selector(didTapComposeButton))
+        tabbarItem.tintColor = .link
+        return tabbarItem
+    }()
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        return tableView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Chats"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         view.backgroundColor = .systemBackground
-
+        configureNavBar()
         
         
     }
@@ -27,6 +35,12 @@ class ConversationsViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+    }
+    @objc private func didTapComposeButton(){
+        
+    }
+    private func configureNavBar() {
+        navigationController?.navigationItem.rightBarButtonItem = newConversationsBarButtonItem
     }
     private func validateAuth() {
         if FirebaseAuth.Auth.auth().currentUser == nil {
