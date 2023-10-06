@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MessageKit
 
 extension UIView {
     public var width: CGFloat {
@@ -41,3 +42,4 @@ extension UITextField {
 }
 //MARK: - Typealias
 typealias configureTableView = UITableViewDelegate & UITableViewDataSource
+typealias configureMessageCollectionView = MessagesDataSource & MessagesLayoutDelegate & MessagesDisplayDelegate

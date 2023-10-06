@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		937F9FDC2ACEFF6A00EFB264 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937F9FDB2ACEFF6A00EFB264 /* ChatViewController.swift */; };
 		93BBFBE42ACD93DF0000FFC6 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBFBE32ACD93DF0000FFC6 /* MainTabbarViewController.swift */; };
 		93BBFBE82ACDA4270000FFC6 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBFBE72ACDA4270000FFC6 /* ProfileTableViewCell.swift */; };
 		93BBFBEA2ACDBCD60000FFC6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93BBFBE92ACDBCD60000FFC6 /* GoogleService-Info.plist */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		937F9FDB2ACEFF6A00EFB264 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		93BBFBE32ACD93DF0000FFC6 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		93BBFBE72ACDA4270000FFC6 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		93BBFBE92ACDBCD60000FFC6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				93E3F3792AC9818A0024C62E /* PhotoViewerViewController.swift */,
 				93E3F37B2AC981940024C62E /* VideoPlayerViewController.swift */,
 				93E3F37D2AC981B10024C62E /* NewConversationViewController.swift */,
+				937F9FDB2ACEFF6A00EFB264 /* ChatViewController.swift */,
 				93E3F37F2AC981BA0024C62E /* ProfileViewController.swift */,
 				93BBFBE32ACD93DF0000FFC6 /* MainTabbarViewController.swift */,
 			);
@@ -303,6 +306,7 @@
 				93E3F35C2AC97BEE0024C62E /* AppDelegate.swift in Sources */,
 				93E3F3802AC981BA0024C62E /* ProfileViewController.swift in Sources */,
 				93BBFBE82ACDA4270000FFC6 /* ProfileTableViewCell.swift in Sources */,
+				937F9FDC2ACEFF6A00EFB264 /* ChatViewController.swift in Sources */,
 				93BBFBE42ACD93DF0000FFC6 /* MainTabbarViewController.swift in Sources */,
 				93E3F35E2AC97BEE0024C62E /* SceneDelegate.swift in Sources */,
 				93E3F37A2AC9818A0024C62E /* PhotoViewerViewController.swift in Sources */,

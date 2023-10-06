@@ -7,8 +7,10 @@
 
 import UIKit
 import FirebaseAuth
-
+import JGProgressHUD
 class ProfileViewController: UIViewController {
+    private let spinner = JGProgressHUD(style: .dark )
+
     private let profileTableView: UITableView = {
         let tableView = UITableView()
         tableView.register(ProfileTableViewCell.self, forCellReuseIdentifier: ProfileTableViewCell.identifier)
@@ -47,7 +49,6 @@ extension ProfileViewController: configureTableView {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ProfileTableViewCell.identifier, for: indexPath) as? ProfileTableViewCell else { return UITableViewCell()}
         let title = data[indexPath.row]
-        print(title)
         cell.textLabel?.text = title
         cell.textLabel?.textAlignment = .center
         cell.textLabel?.textColor = .red
@@ -59,6 +60,7 @@ extension ProfileViewController: configureTableView {
         
         alert.addAction(UIAlertAction(title: "Sign Out", style: .destructive, handler: { [weak self] alert in
             guard let strongSelf = self else { return }
+            strongSelf.spinner.show(in: strongSelf.view)
             do {
                 try FirebaseAuth.Auth.auth().signOut()
                 let vc = LoginViewController()
